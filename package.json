@@ -1,0 +1,25 @@
+{
+  "name": "node-streams",
+  "version": "1.0.0",
+  "description": "Examples of using streams in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/streamReceive",
+    "upload": "node client/streamSend client/11-0.txt localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neohed/node-streams.git"
+  },
+  "keywords": [
+    "node",
+    "streams"
+  ],
+  "author": "neohed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neohed/node-streams/issues"
+  },
+  "homepage": "https://github.com/neohed/node-streams#readme"
+}
