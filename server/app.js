@@ -1,12 +1,19 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+
+const env = process.env.NODE_ENV || 'development';
 
 const indexRouter = require('./routes/index');
 
 const app = express();
+
+if (env === 'development') {
+  app.use(cors());
+}
 
 app.use(logger('dev'));
 app.use(express.json());
