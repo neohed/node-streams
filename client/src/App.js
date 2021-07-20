@@ -34,7 +34,7 @@ function App() {
             })
             .then(stream => {
                 // Respond with our stream
-                return new Response(stream, { headers: { "Content-Type": "text/html" } }).text();
+                return new Response(stream, { headers: { "Content-Type": "text/plain" } }).text();
             })
             .then(result => {
                 // Do things with result
