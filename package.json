@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server/streamReceive",
-    "upload": "node client/streamSend client/11-0.txt localhost"
+    "server": "node tools/streamReceive",
+    "upload": "node tools/streamSend data/11-0.txt localhost"
   },
   "repository": {
     "type": "git",
